@@ -1,0 +1,23 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SymbolTool</AssemblyName>
+    <RootNamespace>WindowsSymbolTool</RootNamespace>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>dist\</OutputPath>
+    <IntermediateOutputPath>build\obj\</IntermediateOutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System"/><Reference Include="System.Core"/>
+    <Reference Include="System.Windows.Forms"/><Reference Include="System.Drawing"/>
+    <Reference Include="System.IO.Compression"/><Reference Include="System.IO.Compression.FileSystem"/>
+    <Reference Include="System.Web.Extensions"/>
+    <Compile Include="src\SymbolTool.cs"/>
+    <EmbeddedResource Include="vendor\windows-debug-tools.zip"><LogicalName>tools.zip</LogicalName></EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

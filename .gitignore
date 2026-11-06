@@ -1,0 +1,25 @@
+# Build and IDE intermediates
+/build/
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Keep the compiled application and its release metadata
+/dist/*
+!/dist/SymbolTool.exe
+!/dist/SHA256SUMS.txt
+!/dist/THIRD-PARTY-NOTICE.txt
+
+# Runtime files and machine-specific symbol data (at any depth)
+**/.symbol-runtime/
+**/request_*/
+**/symbol_*/
+**/test-cache-*/
+**/wrong-identity-*/
+*.pdb
+*.dmp
+*.log
+*.tmp
+.download.lock
