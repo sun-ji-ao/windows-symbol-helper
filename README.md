@@ -4,9 +4,9 @@
 
 ## 直接使用
 
-交付程序：[直接下载 SymbolTool.exe](https://github.com/sun-ji-ao/Windows-/raw/refs/heads/main/dist/SymbolTool.exe)。点击链接下载 EXE，保存到可写目录后运行。只复制这个 EXE 即可使用。
+交付程序：[直接下载 SymbolTool.exe](https://github.com/sun-ji-ao/windows-symbol-helper/raw/refs/heads/main/dist/SymbolTool.exe)。点击链接下载 EXE，保存到可写目录后运行。只复制这个 EXE 即可使用。
 
-备用下载：[SymbolTool.exe 原始文件](https://raw.githubusercontent.com/sun-ji-ao/Windows-/main/dist/SymbolTool.exe)。校验值见 [SHA256SUMS.txt](dist/SHA256SUMS.txt)，第三方声明见 [THIRD-PARTY-NOTICE.txt](dist/THIRD-PARTY-NOTICE.txt)。
+备用下载：[SymbolTool.exe 原始文件](https://raw.githubusercontent.com/sun-ji-ao/windows-symbol-helper/main/dist/SymbolTool.exe)。校验值见 [SHA256SUMS.txt](dist/SHA256SUMS.txt)，第三方声明见 [THIRD-PARTY-NOTICE.txt](dist/THIRD-PARTY-NOTICE.txt)。
 
 程序使用 Windows 自带的 .NET Framework 4.x（需要 4.5 或以上，正常 Windows 10/11 已具备），无需安装 Python、Node、Windows SDK 或另外下载依赖。首次运行把随包微软工具释放到 EXE 同目录 `.symbol-runtime`，再次启动先校验并复用。程序目录必须可写；不要直接在压缩包内运行。
 
